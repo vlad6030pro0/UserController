@@ -1,0 +1,9 @@
+﻿@model userproj.Models.ViewModels.SettingsViewModel
+
+<h1>Настройки</h1>
+
+@if(@Model.IsAuthentificated){
+    <p>Настройки доступны для пользователя @Model.Name!</p>
+}else{
+    <p>Вы не авторизованы</p>
+}
